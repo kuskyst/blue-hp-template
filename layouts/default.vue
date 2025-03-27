@@ -1,6 +1,6 @@
 <template>
   <v-app class="bg-secondary">
-    <v-app-bar scroll-behavior="collapse" color="transparent" flat class="position-relative pt-4 pb-4">
+    <v-app-bar color="transparent" flat class="position-relative pt-4 pb-4">
 
       <v-app-bar-title>○○××</v-app-bar-title>
 

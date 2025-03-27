@@ -1,13 +1,14 @@
 <template>
   <div class="w-100 pa-0 ma-0">
     <div class="top-image" />
-    <div class="bg-mylightblue">
-      <line-topic class="pa-16" :en="'What’s ○○××'" :ja="'○○××○○××○○××'" />
-      <div class="text-center text-h6 pa-4">
+    <div class="bg-mylightblue pa-16">
+      <side-line-topic :en="'What’s ○○××'" :ja="'○○××○○××○○××'" />
+      <div class="text-center text-h6 pa-4 mt-10 mb-10">
         ○○××○○××○○××○○××<span class="yellow-underline">○○××○○××○○××○○</span>××、<br>
         <span class="yellow-underline">○○××○○××○○</span>××○○××<span class="yellow-underline">○○××○○××○○××○○××</span>○○××。
       </div>
-      <v-img class="mt-6" height="240" src="@/assets/images/whats_img.png" />
+      <v-img height="300" src="@/assets/images/whats_img.png" />
+      <ver-line-topic :ja="'○○××'" />
     </div>
   </div>
 </template>
