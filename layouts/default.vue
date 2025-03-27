@@ -5,7 +5,7 @@
       <v-app-bar-title>○○××</v-app-bar-title>
 
       <template v-slot:append>
-        <v-app-bar-nav-icon v-if="!drawer" @click="drawer = !drawer" />
+        <v-app-bar-nav-icon v-if="!drawer" @click="drawer = !drawer" color="secondary" class="menu" />
         <v-btn v-else icon="mdi-close" @click="drawer = !drawer" />
       </template>
     </v-app-bar>
@@ -44,3 +44,10 @@ const miniVariant = ref(false)
 const clipped = ref(true)
 const drawer = ref(false)
 </script>
+
+<style scoped>
+.menu {
+  background-color: white;
+  box-shadow: 0 0 12px #3E4B8F;
+}
+</style>
