@@ -17,9 +17,9 @@ const vuetify = createVuetify({
         colors: {
           primary: '#3E4B8F',
           secondary: '#2A9DDE',
-          myorange: 'FC9B31',
-          mypink: 'FAC4D4',
-          mylightblue: 'AEDAF2',
+          myorange: '#FC9B31',
+          mypink: '#FAC4D4',
+          mylightblue: '#AEDAF2',
         }
       }
     }

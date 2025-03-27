@@ -1,6 +1,6 @@
 <template>
   <v-app class="bg-secondary">
-    <v-app-bar color="transparent" flat class="position-relative pt-4 pb-4">
+    <v-app-bar scroll-behavior="collapse" color="transparent" flat class="position-relative pt-4 pb-4">
 
       <v-app-bar-title>○○××</v-app-bar-title>
 
@@ -16,6 +16,7 @@
       :mini-variant="!miniVariant"
       :clipped="clipped"
       v-model="drawer"
+      :class="{ 'w-50': drawer }"
       class="bg-secondary fill-height top-0 right-0 position-fixed"
     >
       <v-list class="mt-16">
@@ -36,6 +37,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    <slot />
   </v-app>
 </template>
 
@@ -46,6 +48,10 @@ const drawer = ref(false)
 </script>
 
 <style scoped>
+* {
+  padding: 0;
+  margin: 0;
+}
 .menu {
   background-color: white;
   box-shadow: 0 0 12px #3E4B8F;
