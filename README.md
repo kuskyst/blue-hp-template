@@ -4,7 +4,6 @@
 | ---- | ---- |
 | Language| Nuxt.js 3 (Vue.js 3) |
 | Package Management | npm |
-| Architecture | Clean Architecture ? |
 | UI Component | Vuetify 3 |
 | Test | Jest |
 
